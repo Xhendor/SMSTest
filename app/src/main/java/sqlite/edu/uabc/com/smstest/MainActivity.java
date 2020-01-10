@@ -2,8 +2,8 @@ package sqlite.edu.uabc.com.smstest;
 
 import android.Manifest;
 import android.os.Build;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import java.util.Observable;
@@ -39,6 +39,6 @@ public class MainActivity extends AppCompatActivity implements Observer {
     @Override
     public void update(Observable observable, Object o) {
 
-        System.err.println("Paso algo");
+        System.err.println("Texto: "+o.toString());
     }
 }
